@@ -8,5 +8,5 @@ def top_hashtags(database):
         for hashtag in hashtags:
             hashtags_dict[hashtag] += 1
             
-    top10 = sorted(hashtags_dict.items(), key=lambda x:x[1], reverse=True) #Array
+    top10 = sorted(hashtags_dict.items(), key=lambda x:x[1], reverse=True)[0:10]
     return top10
